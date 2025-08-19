@@ -36,12 +36,27 @@
         </style>
 
         <style>
-        #map {
-            width: 983px;
-            height: 711px;
-        }
+
+ .page-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+</style>
+
+  <!-- Title at the very top of the page -->
+ <body>
+   <div class="page-title">Waiu Wetland</div>
+
+<p style="font-size: 20px; font-weight: bold; text-align: left;">
+  A Lower Hutt Forest &amp; Bird Restoration Project
+</p>
+
+  <p>Click on a coloured point to view image. Red points are recent images, Orange older images, Blue follow the water flow.</p>
+</body>
         </style>
-        <title></title>
+
     </head>
     <body>
         <div id="map">
@@ -51,12 +66,14 @@
             </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:2193','+proj=tmerc +lat_0=0 +lon_0=173 +k=0.9996 +x_0=1600000 +y_0=10000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs');</script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
         <script src="resources/photon-geocoder-autocomplete.min.js"></script>
-        <script src="layers/Photoalbum_1.js"></script><script src="layers/Photos_2.js"></script><script src="layers/WaiuBridgesphoto_points_3.js"></script>
-        <script src="styles/Photoalbum_1_style.js"></script><script src="styles/Photos_2_style.js"></script><script src="styles/WaiuBridgesphoto_points_3_style.js"></script>
+        <script src="layers/WaiuB42025photo_points_1.js"></script><script src="layers/Waiuwatersphoto_points_2.js"></script><script src="layers/Waiuphotosphoto_points_3.js"></script>
+        <script src="styles/WaiuB42025photo_points_1_style.js"></script><script src="styles/Waiuwatersphoto_points_2_style.js"></script><script src="styles/Waiuphotosphoto_points_3_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>
