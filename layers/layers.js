@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:2193").setExtent([1761355.751620, 5431818.868875, 1761671.755772, 5432108.360207]);
+//ol.proj.get("EPSG:2193").setExtent([1761442.424319, 5431731.734170, 1761614.528080, 5431876.479836]);
 var wms_layers = [];
 
 var lyr_Waiumapgeoref150L2_0 = new ol.layer.Image({
