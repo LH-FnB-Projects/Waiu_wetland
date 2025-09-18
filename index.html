@@ -19,26 +19,43 @@
         </style>
 
         <style>
-
-   .page-title {
-  text-align: left;
+.page-title {
   font-size: 24px;
   font-family: 'Arial';
   font-weight: bold;
   margin: 20px 0;
 }
+
+.page-guide {
+  position: relative;       /* allows absolute positioning inside */
+  display: inline-block;    /* shrink-wrap to text width */
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+
+}
+
+.page-guide img {
+  position: absolute;
+  top: 50%;                 /* vertical center */
+  transform: translateY(-50%);
+  margin-left: 200px;         /* spacing from text */
+  height: 120px;             /* logo size independent of text */
+}
 </style>
 
-    <!-- Title at the very top of the page -->
- <body>
-   <div class="page-title">Waiu Wetland</div>
+<body>
+  <div class="page-title">Waiu Weetland</div>
 
-<p style="font-family: 'Arial'; font-size: 20px; font-weight: bold; text-align: left;">
-  A Lower Hutt Forest &amp; Bird Restoration Project
-</p>
+  <p class="page-guide">
+    A Lower Hutt Forest &amp; Bird Restoration Project
+    <img src="FnB-logo.jpg" alt="Logo">
+  </p>
 
-  <p>Click on a coloured point to view image. Red points are recent planting.</p>
+  <div>Click on a coloured point to view image. Red points are recent planting.</div>
 </body>
+
         </style>
 
         <title>Waiu Wetland</title>
